@@ -13,4 +13,4 @@ A collection of my **LeetCode** solutions in Python and SQL.
 - 📂 `easy/` → Beginner-friendly problems  
 - 📂 `medium/` → Intermediate-level challenges  
 - 📂 `hard/` → Advanced problems  
-- 🔜📂 `sql/` → Solutions for SQL-based problems  
+- 📂 `sql/` → Solutions for SQL-based problems  
