@@ -1,0 +1,9 @@
+# Write your MySQL query statement below
+SELECT d.name as Department, ranking_table.name as Employee, ranking_table.salary as Salary
+FROM (
+    SELECT e.departmentId, e.id, e.salary, e.name, DENSE_RANK() OVER (PARTITION BY e.departmentId ORDER BY e.salary DESC) as ranking
+    FROM Employee as e
+) as ranking_table
+JOIN Department as d
+ON d.id = ranking_table.departmentId
+WHERE ranking < 4
